@@ -4,23 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ChildActivity"
+    tools:showIn="@layout/activity_child">
 
 
     <EditText
-        android:id="@+id/editText1"
-        android:layout_above="@id/button2"
+        android:id="@+id/editText"
+        android:layout_above="@id/button"
         android:layout_marginBottom="50dp"
         android:layout_centerHorizontal="true"
         android:layout_width="200dp"
-        android:text="Will appear here"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button"
         android:layout_width="164dp"
         android:layout_height="61dp"
         android:layout_centerInParent="true"
-        android:text="Launch Child" />
+        android:text="Trigger Event" />
+
 
 </RelativeLayout>
